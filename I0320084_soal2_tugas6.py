@@ -1,8 +1,10 @@
-nilai = input('Masukkan list bilangan yang akan dirata-rata. (ex: 1 2 3 dst) : ')
-list = nilai.split(' ')
-nilai2 = [int(i) for i in list]
-n = 0
-for angka in nilai2 :
-    n += angka
-    mean = n/len(nilai2)
-print('Nilai rata-rata adalah = ', mean)
+nilai =0
+a = 0
+while True:
+    jumlah = int(input('Masukkan total bilangan yang akan anda input:'))
+    for a in range(1,jumlah+1):
+        nilai2 = int(input('Masukkan bilangan ke-%d :' % a))
+        nilai += nilai2
+        mean = nilai / jumlah
+    print('rata-rata bilangan tersebut = ',mean)
+    break
